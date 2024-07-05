@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 14</title>
+<style>
+    body{
+        overflow: hidden;
+    }
+    .city{
+        background-image: url(Images/Citywithroad.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:650px;
+        width:1400px;
+    }
+    .car img{
+position: relative;
+height:200px;
+width:200px;
+left:50px;
+top:-190px;
+animation-name: yogee;
+animation-duration: 1s;
+animation-delay:2s;
+animation-iteration-count: 1s;
+    }
+    @keyframes yogee
+    {
+        100%{
+            
+            left:1200px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div>
+    <div class="city"></div>
+    <div class="car"><img src="Images/smallcar.gif"></div>
+</body>
+</html>

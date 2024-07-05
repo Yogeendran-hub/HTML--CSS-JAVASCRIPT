@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 21</title>
+</head>
+<style>
+    fieldset{
+    height:350px;
+    background-color:rgb(223,223,228);
+    width:40%;
+    margin-top:150px;
+    margin-left:350px;
+    text-align:center;
+    align-items:center;
+    }
+    input{
+        margin-top:30px;
+    }
+    button{
+        margin-top:30px;
+        color:white;
+        background-color: black;
+    }
+    button:hover{
+        padding:10px 30px;
+        border-radius:20px;
+        background-color: blueviolet;
+    }
+    table{
+        border-collapse:collapse;
+        margin-left:180px;
+        margin-top:100px;
+        width:200px;
+        height:150px;
+        color:black;
+        border:1px solid black;
+    }
+    body{
+        background-color:rgb(22,211,94);
+    }
+
+</style>
+
+<body>
+    <fieldset>
+        <label>Enter your Row here:</label>
+        <input type="tel" id="r"><br><br>
+        <label>Enter your Col here:</label>
+        <input type="tel" id="c"><br><br>
+        <button id="click" onclick="fun()">click to create table</button>
+        <table id="table" border="2"></table>
+    </fieldset>     
+</body>
+
+<script>
+    function fun(){
+        let row=Number(document.getElementById("r").value);
+        let col=Number(document.getElementById("c").value);
+        let i,j,c=1;
+        for(i=0;i<row;i++){
+            let row_box=document.getElementById("table").insertRow(i)
+            for(j=0;j<col;j++)
+            {
+                let col_box=row_box.insertCell();
+                col_box.innerHTML=c++;
+            }
+        }
+        document.getElementById("table").style.background="aqua"
+    }
+</script>
+</html>

@@ -1,1 +1,1 @@
-Hi. This is my projects done using HTML CSS AND JAVASCRIPT
+Hi. This is my practice projects done using HTML CSS AND JAVASCRIPT
